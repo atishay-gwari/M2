@@ -1,0 +1,15 @@
+{% extends './common/base.html' %}
+{% load static %}
+{% block content %}
+<section class="py-5">
+    <div class="container text-center py-5">
+        <p class="fw-bold text-success mb-2" style="font-size: 1.6rem;">Fill the form!</p><a href="#">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{form}}
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+    </div>
+</section>
+{% endblock %}
